@@ -1,0 +1,55 @@
+version: '3.8'
+services:
+    redis:
+        image: redis:6-alpine
+        restart: "unless-stopped"
+        environment:
+            - TZ=Europe/Moscow
+        volumes:
+            - "./docker/redis/:/usr/local/etc/redis/"
+        command: "redis-server /usr/local/etc/redis/config/redis.conf"
+    db:
+        image: postgres:15.3-alpine3.18
+        restart: "unless-stopped"
+        environment:
+            - POSTGRES_USER={SUPERUSER_USER}
+            - POSTGRES_PASSWORD={SUPERUSER_PASSWORD}
+            - POSTGRES_HOST_AUTH_METHOD=scram-sha-256
+            - POSTGRES_INITDB_ARGS=--auth-host=scram-sha-256
+            - TZ=Europe/Moscow
+        volumes:
+            - "./docker/pg/data:/var/lib/postgresql/data"
+            - "./docker/pg/init:/docker-entrypoint-initdb.d"
+            - "./docker/pg/dump:/var/lib/postgresql/dump"
+    db_migration:
+        image: "telegram_bot:latest"
+        build: .
+        environment:
+            - TZ=Europe/Moscow
+        restart: "on-failure"
+        depends_on:
+            - db
+        env_file: .env
+        command: sh -c "python -m alembic upgrade head"
+    nats:
+        image: nats:2.9.17-alpine3.18
+        environment:
+            - TZ=Europe/Moscow
+        restart: "unless-stopped"
+        volumes:
+            - "./docker/nats:/usr/local/etc/nats"
+        command: sh -c "cd /usr/local/etc/nats/config/ &&
+                        nats-server -c server.conf"
+    bot:
+        image: "telegram_bot:latest"
+        build: .
+        stop_signal: SIGINT
+        environment:
+            - TZ=Europe/Moscow
+        restart: "unless-stopped"
+        env_file: .env
+        depends_on:
+            - db
+            - db_migration
+            - redis
+            - nats

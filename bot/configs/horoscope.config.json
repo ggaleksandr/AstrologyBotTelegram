@@ -1,0 +1,181 @@
+{
+
+"horoscope_type_names_rus": {
+    "Basic": {
+        "id": 0,
+        "horoscope_type_name_rus": "Общий",
+        "horoscope_type_name_rus_genitive": "общих"
+    },
+    "Romantic": {
+        "id": 1,
+        "horoscope_type_name_rus": "Любовный",
+        "horoscope_type_name_rus_genitive": "любовных"
+    },
+    "Career": {
+        "id": 2,
+        "horoscope_type_name_rus": "Карьерный",
+        "horoscope_type_name_rus_genitive": "карьерных"
+    }
+    },
+
+"sign_names": {
+    "Aries": {
+        "id": 0,
+        "sign_name_rus": "Овен",
+        "sign_name_rus_genitive": "Овнов",
+        "sign_emoji": "♈"
+    },
+    "Taurus": {
+        "id": 1,
+        "sign_name_rus": "Телец",
+        "sign_name_rus_genitive": "Тельцов",
+        "sign_emoji": "♉"
+    },
+    "Gemini": {
+        "id": 2,
+        "sign_name_rus": "Близнецы",
+        "sign_name_rus_genitive": "Близнецов",
+        "sign_emoji": "♊"
+    },
+    "Cancer": {
+        "id": 3,
+        "sign_name_rus": "Рак",
+        "sign_name_rus_genitive": "Раков",
+        "sign_emoji": "♋"
+    },
+    "Leo": {
+        "id": 4,
+        "sign_name_rus": "Лев",
+        "sign_name_rus_genitive": "Львов",
+        "sign_emoji": "♌"
+    },
+    "Virgo": {
+        "id": 5,
+        "sign_name_rus": "Дева",
+        "sign_name_rus_genitive": "Дев",
+        "sign_emoji": "♍"
+    },
+    "Libra": {
+        "id": 6,
+        "sign_name_rus": "Весы",
+        "sign_name_rus_genitive": "Весов",
+        "sign_emoji": "♎"
+    },
+    "Scorpio": {
+        "id": 7,
+        "sign_name_rus": "Скорпион",
+        "sign_name_rus_genitive": "Скорпионов",
+        "sign_emoji": "♏"
+    },
+    "Sagittarius": {
+        "id": 8,
+        "sign_name_rus": "Стрелец",
+        "sign_name_rus_genitive": "Стрельцов",
+        "sign_emoji": "♐"
+    },
+    "Capricornus": {
+        "id": 9,
+        "sign_name_rus": "Козерог",
+        "sign_name_rus_genitive": "Козерогов",
+        "sign_emoji": "♑"
+    },
+    "Aquarius": {
+        "id": 10,
+        "sign_name_rus": "Водолей",
+        "sign_name_rus_genitive": "Водолеев",
+        "sign_emoji": "♒"
+    },
+    "Pisces": {
+        "id": 11,
+        "sign_name_rus": "Рыбы",
+        "sign_name_rus_genitive": "Рыб",
+        "sign_emoji": "♓"
+    }
+},
+
+  "month_list": [
+    {
+        "id": 0,
+        "month_name_rus": "января"
+    },
+    {
+        "id": 1,
+        "month_name_rus": "февраля"
+    },
+    {
+        "id": 2,
+        "month_name_rus": "марта"
+    },
+    {
+        "id": 3,
+        "month_name_rus": "апреля"
+    },
+    {
+        "id": 4,
+        "month_name_rus": "мая"
+    },
+    {
+        "id": 5,
+        "month_name_rus": "июня"
+    },
+    {
+        "id": 6,
+        "month_name_rus": "июля"
+    },
+    {
+        "id": 7,
+        "month_name_rus": "августа"
+    },
+    {
+        "id": 8,
+        "month_name_rus": "сентября"
+    },
+    {
+        "id": 9,
+        "month_name_rus": "октября"
+    },
+    {
+        "id": 10,
+        "month_name_rus": "ноября"
+    },
+    {
+        "id": 11,
+        "month_name_rus": "декабря"
+    }
+],
+
+"image_config":
+    {
+    "x_start_main_text": 210,
+    "y_start_main_text": 675,
+    "y_main_text_clearance": 75,
+    "main_text_font_size": 45,
+    "main_text_width": 45,
+    "font_color_main_text": "#FFFFFF",
+    "main_text_font_path": "data/fonts/Montserrat-Bold.ttf",
+
+    "x_horoscope_type_sign": 200,
+    "y_horoscope_type_sign": 270,
+    "horoscope_type_sign_font_size": 45,
+    "horoscope_type_sign_color": "#FFFFFF",
+    "horoscope_type_sign_font_path": "data/fonts/Montserrat-Medium.ttf",
+
+    "x_date_sign": 195,
+    "y_date_sign": 325,
+    "date_sign_font_size": 100,
+    "horoscope_date_sign_color": "#FFFFFF",
+    "horoscope_date_sign_font_path": "data/fonts/Montserrat-Bold.ttf",
+
+    "x_sign_emoji": 250,
+    "y_sign_emoji": 500,
+    "sign_emoji_font_size": 45,
+    "sign_emoji_color": "#F4B75C",
+    "sign_emoji_font_path": "data/fonts/Symbola.ttf",
+
+    "x_sign_name_rus_sign": 345,
+    "y_sign_name_rus_sign": 500,
+    "sign_name_rus_font_size": 45,
+    "sign_name_rus_color": "#F4B75C",
+    "sign_name_rus_font_path": "data/fonts/Montserrat-Medium.ttf"
+    }
+}

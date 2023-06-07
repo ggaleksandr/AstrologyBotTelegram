@@ -1,0 +1,263 @@
+{
+  
+    "planets": [
+        {
+          "id": 0,
+          "name": "sun",
+          "planet_symbol": "\u2609",
+          "color": "#984b00"
+        },
+        {
+          "id": 1,
+          "name": "moon",
+          "planet_symbol": "\u263D",
+          "color": "#150052"
+        },
+        {
+          "id": 2,
+          "name": "mercury",
+          "planet_symbol": "\u263F",
+          "color": "#520800"
+        },
+        {
+          "id": 3,
+          "name": "venus",
+          "planet_symbol": "\u2640",
+          "color": "#400052"
+        },
+        {
+          "id": 4,
+          "name": "mars",
+          "planet_symbol": "\u2642",
+          "color": "#540000"
+        },
+        {
+          "id": 5,
+          "name": "jupiter",
+          "planet_symbol": "\u2643",
+          "color": "#47133d"
+        },
+        {
+          "id": 6,
+          "name": "saturn",
+          "planet_symbol": "\u2644",
+          "color": "#124500"
+        },
+        {
+          "id": 7,
+          "name": "uranus",
+          "planet_symbol": "\u2645",
+          "color": "#6f0766"
+        },
+        {
+          "id": 8,
+          "name": "neptune",
+          "planet_symbol": "\u2646",
+          "color": "#06537f"
+        },
+        {
+          "id": 9,
+          "name": "pluto",
+          "planet_symbol": "\u2647",
+          "color": "#713f04"
+        },
+        {
+          "id": 10,
+          "name": "mean_node",
+          "planet_symbol": "\u260B",
+          "color": "#4c1541"
+        },
+        {
+          "id": 11,
+          "name": "true_node",
+          "planet_symbol": "\u260A",
+          "color": "#4c1541"
+        }
+      ],
+
+    "houses": [
+        {
+          "id": 0,
+          "name": "first_house"
+        },
+        {
+          "id": 1,
+          "name": "second_house"
+        },
+        {
+          "id": 2,
+          "name": "third_house"
+        },
+        {
+          "id": 3,
+          "name": "fourth_house"
+        },
+        {
+          "id": 4,
+          "name": "fifth_house"
+        },
+        {
+          "id": 5,
+          "name": "sixth_house"
+        },
+        {
+          "id": 6,
+          "name": "seventh_house"
+        },
+        {
+          "id": 7,
+          "name": "eighth_house"
+        },
+        {
+          "id": 8,
+          "name": "ninth_house"
+        },
+        {
+          "id": 9,
+          "name": "tenth_house"
+        },
+        {
+          "id": 10,
+          "name": "eleventh_house"
+        },
+        {
+          "id": 11,
+          "name": "twelfth_house"
+        }
+      ],
+
+    "coordinates_and_font_sizes": [
+        {
+          "id": 0,
+          "function": "draw_user_names",
+          "x": 1530,
+          "y": 205,
+          "font_size_composite": 50,
+          "font_size_natal": 55
+        },
+        {
+            "id": 1,
+            "function": "draw_input_birth_info",
+            "x_composite_place_of_birth": 10,
+            "y_composite_place_of_birth": 70,
+            "font_size_composite_place_of_birth": 35,
+
+            "x_composite_date_of_birth": 1258,
+            "y_composite_date_of_birth": 347,
+            "font_size_composite_date_of_birth": 35,
+
+            "x_composite_time_of_birth": 30,
+            "y_composite_time_of_birth": 110,
+            "font_size_composite_time_of_birth": 35,
+
+            "x_natal_place_of_birth": 1510,
+            "y_natal_place_of_birth": 307.5,
+            "font_size_natal_place_of_birth": 35,
+
+            "x_natal_date_of_birth": 1510,
+            "y_natal_date_of_birth": 385,
+            "font_size_natal_date_of_birth": 35,
+
+            "x_natal_time_of_birth": 1577.5,
+            "y_natal_time_of_birth": 512.5,
+            "font_size_natal_time_of_birth": 100
+        },
+        {
+            "id": 2,
+            "function": "draw_user_info",
+            "x_composite_first_user": 1100,
+            "y_composite_first_user": 150,
+            "x_composite_second_user": 1500,
+            "y_composite_second_user": 150,
+            "font_size_composite": 25,
+
+            "x_natal": 930,
+            "y_natal": 1545,
+            "font_size_natal": 35
+        },
+        {
+            "id": 3,
+            "function": "draw_couple_aspects_info",
+            "x_composite": 1000,
+            "y_composite": 600,
+            "font_size_composite": 25
+        },
+        {
+            "id": 4,
+            "function": "draw_natal_aspects",
+            "x_natal": 1577.5,
+            "y_natal": 1391.125,
+            "font_size_natal": 45
+        }
+      ],
+
+      "place_natal_circle_and_watermark_vars": [
+        {
+          "id": 0,
+          "background_image_width_composite": 2500,
+          "background_image_height_composite": 1285,
+
+          "background_image_width_natal": 1671,
+          "background_image_height_natal": 2508
+        },
+        {
+            "id": 1,
+            "natal_circle_margin_top_ratio_composite": 0.075,
+            "natal_circle_margin_left_ratio_composite": 0.025,
+
+            "natal_circle_margin_top_ratio_natal": 0.025
+        },
+        {
+            "id": 2,
+            "natal_circle_resize_ratio_composite": 1.6,
+            "natal_circle_resize_ratio_natal": 0.7
+        },
+        {
+            "id": 3,
+            "watermark_to_background_ratio": 0.15,
+            "watermark_margin_to_background_ratio": 0.015
+        }
+      ],
+      
+      "draw_input_birth_info_vars": [
+        {
+          "id": 0,
+          "y_text_clearance_coef": 1.2
+        }
+      ],
+
+      "draw_user_info_vars": [
+        {
+          "id": 0,
+          "x_text_clearance_coef": 9.5,
+          "y_text_clearance_coef": 60,
+
+          "planets_to_houses_clearance_coef_composite": 20,
+          "planets_to_houses_clearance_coef_natal": 8.1
+        }
+      ],
+
+      "draw_couple_aspects_info_vars": [
+        {
+          "id": 0,
+          "x_clearance": 300,
+          "next_line_number": 12,
+          "copule_aspect_x_text_clearance_coef": 4,
+          "copule_aspect_y_text_clearance_coef": 1.2
+        }
+      ],
+
+      "draw_natal_aspects_vars": [
+        {
+          "id": 0,
+          "line_width": 1,
+          "line_color": "white",
+          "square_size": 85.1
+        }
+      ]
+
+
+
+
+  }
+  
